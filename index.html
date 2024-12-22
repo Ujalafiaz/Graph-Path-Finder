@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Path Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Graph Path Finder</h1>
+    </header>
+    <main>
+        <!-- Graph Container -->
+        <div id="graph-container">
+            <canvas id="graphCanvas" width="800" height="600"></canvas>
+        </div>
+        
+        <!-- Controls Section -->
+        <aside id="controls">
+            <h2>Graph Editor</h2>
+            <form id="addEdgeForm">
+                <label for="fromNode">From City:</label>
+                <input type="text" id="fromNode" required>
+                <label for="toNode">To City:</label>
+                <input type="text" id="toNode" required>
+                <label for="cost">Cost:</label>
+                <input type="number" id="cost" min="1" required>
+                <button type="submit">Add Path</button>
+            </form>
+            <div id="algorithm-buttons">
+                <button id="startBFSButton">Start BFS</button>
+                <button id="startDFSButton">Start DFS</button>
+                <button id="startUCSButton">Start UCS</button>
+                <button id="resetButton">Reset</button>
+                <button id="resetColorsButton">Reset Colors</button>
+            </div>
+            <div id="output">
+                <h3>Output:</h3>
+                <p id="pathDisplay">Path: </p>
+                <p id="costDisplay">Total Cost: </p>
+                <p id="stepsDisplay">Steps:</p>
+            </div>
+        </aside>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>     

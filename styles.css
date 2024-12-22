@@ -1,0 +1,163 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9FAFB; /* Soft Gray */
+    color: #374151; /* Charcoal */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #1E3A8A; /* Deep Blue */
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Container */
+main {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+/* Graph Container */
+#graph-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF; /* White */
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1E3A8A; /* Deep Blue */
+    padding: 10px;
+}
+
+/* Controls Section */
+#controls {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D5DB; /* Light Gray */
+}
+
+/* The rest of your existing styles */
+#controls h2 {
+    font-size: 1.5rem;
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+    border-color: #60A5FA;
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #1E3A8A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #60A5FA;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#algorithm-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#algorithm-buttons button {
+    flex: 1;
+    margin: 5px;
+}
+
+/* Output Section Styling */
+#output {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D5DB;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#output h3 {
+    font-size: 1.5rem;
+    color: #1E3A8A;
+    margin-bottom: 15px;
+}
+
+#output p {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+#output p strong {
+    font-weight: bold;
+    color: #1E3A8A;
+}
